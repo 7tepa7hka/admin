@@ -1,0 +1,110 @@
+.users-page {
+  animation: fadeIn Users 0.4s ease-out;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 18px;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.users-header {
+  margin-bottom: 25px;
+}
+
+.users-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #111827;
+}
+
+.users-header p {
+  color: #6b7280;
+  margin: 5px 0 0 0;
+}
+
+.table-wrapper {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th {
+  background: #f9fafb;
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #6b7280;
+  border-bottom: 2px solid #f3f4f6;
+  letter-spacing: 0.05em;
+}
+
+.users-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.users-table tr:hover {
+  background-color: #f9fafb;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #111827;
+  text-transform: capitalize;
+}
+
+.user-username {
+  color: #4f46e5;
+  font-weight: 500;
+}
+
+.user-email {
+  color: #374151;
+}
+
+.user-phone {
+  color: #6b7280;
+}
+
+/* Кнопка Delete */
+.delete-btn {
+  background: #fff1f2;
+  color: #e11d48;
+  border: 1px solid #ffe4e6;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: #e11d48;
+  color: white;
+}
+
+@keyframes fadeInUsers {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
